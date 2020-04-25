@@ -1,0 +1,8 @@
+name: PluginiKontrolEtUlan
+version: 1.0
+main: me.fenish.pkeu.Main
+api-version: 1.13
+authors: [Fenish]
+commands:
+  pkeu:
+    usage: /pkeu
