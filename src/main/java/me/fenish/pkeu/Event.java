@@ -33,5 +33,3 @@ public class Event implements Listener {
         }
     }
 }
-
-//iso işeyip gelcem test et oldu bi kaç bug var
