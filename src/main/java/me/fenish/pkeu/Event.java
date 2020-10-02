@@ -16,7 +16,7 @@ public class Event implements Listener {
     @EventHandler
     public void invClick(InventoryClickEvent event) {
         if (event.getView().getTitle().equalsIgnoreCase("§9Plugin Menajeri")) {
-            if(event.getCurrentItem() != null) {
+            if(event.getCurrentItem() != null && event.getCurrentItem().getType() != Material.AIR) {
                 event.setCancelled(true);
                 if (event.getCurrentItem().getType().equals(Material.SLIME_BALL)) {
                     Plugin pl = Bukkit.getServer().getPluginManager().getPlugin(event.getCurrentItem().getItemMeta().getDisplayName().replace("§a", ""));
